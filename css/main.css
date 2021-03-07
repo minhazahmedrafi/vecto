@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+}
+
+h4, h5, h6 {
+  font-weight: 700;
+}
+
+.btn-outline-secondary {
+  background-color: transparent !important;
+  border-color: #011627 !important;
+  color: #011627 !important;
+  border-radius: 0px !important;
+  position: relative;
+}
+
+.btn-outline-secondary:before {
+  content: '';
+  position: absolute;
+  background-color: #83f3ed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.btn-outline-secondary:hover::before {
+  width: 100%;
+}
+
+.btn-secondary {
+  background: #011627 !important;
+  border-radius: 0px !important;
+  border-color: #011627 !important;
+}
+
+.btn-secondary:hover {
+  color: #83f3ed !important;
+}
+
+.btn-primary {
+  background: #83f3ed !important;
+  border-radius: 0px;
+  border-color: #83f3ed !important;
+  color: #011627 !important;
+}
+
+.btn-primary:hover {
+  background: #011627 !important;
+  color: #fafaff !important;
+}
+
+.navbar {
+  background: #fafaff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #011627;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #777;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+}
+
+#call-section {
+  background: #011627;
+  color: #fafaff;
+}
+
+.underline {
+  width: 10%;
+  height: 3px;
+  background: #83f3ed;
+  margin: 0px auto;
+}
+
+#services-section i {
+  font-size: 3rem;
+  color: #83f3ed;
+}
+
+.dark {
+  color: #83f3ed;
+  background: #011627;
+  height: 300px;
+}
+
+.dark i {
+  font-size: 1.3rem;
+  color: #83f3ed;
+}
+
+#portfolio-section img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#portfolio-section .col-md-3 {
+  position: relative;
+}
+
+#portfolio-section .col-md-3 .filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #83f3ed;
+  opacity: 0.7;
+}
+
+#footer-section {
+  background: #011627;
+  color: #fafaff;
+}
+
+#footer-section a {
+  color: #fafaff;
+}
+
+#footer-section a:hover {
+  color: #83f3ed;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .nav-item {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  #call-section .container {
+    width: 100% !important;
+  }
+  #portfolio-section img {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
